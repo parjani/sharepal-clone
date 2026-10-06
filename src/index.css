@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #fafafa;
+    color: #111111;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+}
+
+@layer utilities {
+  .sharepal-gradient {
+    background: linear-gradient(
+      360deg,
+      rgb(138, 43, 226) 0%,
+      rgb(76, 24, 124) 100%
+    );
+  }
+
+  .sharepal-gradient-text {
+    background: linear-gradient(
+      360deg,
+      rgb(138, 43, 226) 0%,
+      rgb(76, 24, 124) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .sharepal-shadow {
+    box-shadow: 0 10px 30px rgba(76, 24, 124, 0.12);
+  }
+}
